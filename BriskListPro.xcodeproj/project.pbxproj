@@ -11,7 +11,34 @@
 		38126EB3297B35630020DDFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38126EB2297B35630020DDFA /* ContentView.swift */; };
 		38126EB5297B35640020DDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38126EB4297B35640020DDFA /* Assets.xcassets */; };
 		38126EB8297B35640020DDFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38126EB7297B35640020DDFA /* Preview Assets.xcassets */; };
+		38126EC6297C35AC0020DDFA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38126EC5297C35AC0020DDFA /* ShareViewController.swift */; };
+		38126EC9297C35AC0020DDFA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38126EC7297C35AC0020DDFA /* MainInterface.storyboard */; };
+		38126ECD297C35AC0020DDFA /* ArticleSaver.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38126EC3297C35AC0020DDFA /* ArticleSaver.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38126ECB297C35AC0020DDFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38126EA5297B35630020DDFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38126EC2297C35AC0020DDFA;
+			remoteInfo = ArticleSaver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38126ED1297C35AC0020DDFA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				38126ECD297C35AC0020DDFA /* ArticleSaver.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		38126EAD297B35630020DDFA /* BriskListPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BriskListPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +46,23 @@
 		38126EB2297B35630020DDFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38126EB4297B35640020DDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38126EB7297B35640020DDFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38126EBE297C351E0020DDFA /* BriskListPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BriskListPro.entitlements; sourceTree = "<group>"; };
+		38126EC3297C35AC0020DDFA /* ArticleSaver.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArticleSaver.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		38126EC5297C35AC0020DDFA /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		38126EC8297C35AC0020DDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		38126ECA297C35AC0020DDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38126ED2297C35C50020DDFA /* ArticleSaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArticleSaver.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		38126EAA297B35630020DDFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38126EC0297C35AC0020DDFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				38126EAF297B35630020DDFA /* BriskListPro */,
+				38126EC4297C35AC0020DDFA /* ArticleSaver */,
 				38126EAE297B35630020DDFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				38126EAD297B35630020DDFA /* BriskListPro.app */,
+				38126EC3297C35AC0020DDFA /* ArticleSaver.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +93,7 @@
 		38126EAF297B35630020DDFA /* BriskListPro */ = {
 			isa = PBXGroup;
 			children = (
+				38126EBE297C351E0020DDFA /* BriskListPro.entitlements */,
 				38126EB0297B35630020DDFA /* BriskListProApp.swift */,
 				38126EB2297B35630020DDFA /* ContentView.swift */,
 				38126EB4297B35640020DDFA /* Assets.xcassets */,
@@ -67,6 +110,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		38126EC4297C35AC0020DDFA /* ArticleSaver */ = {
+			isa = PBXGroup;
+			children = (
+				38126ED2297C35C50020DDFA /* ArticleSaver.entitlements */,
+				38126EC5297C35AC0020DDFA /* ShareViewController.swift */,
+				38126EC7297C35AC0020DDFA /* MainInterface.storyboard */,
+				38126ECA297C35AC0020DDFA /* Info.plist */,
+			);
+			path = ArticleSaver;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +131,34 @@
 				38126EA9297B35630020DDFA /* Sources */,
 				38126EAA297B35630020DDFA /* Frameworks */,
 				38126EAB297B35630020DDFA /* Resources */,
+				38126ED1297C35AC0020DDFA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38126ECC297C35AC0020DDFA /* PBXTargetDependency */,
 			);
 			name = BriskListPro;
 			productName = BriskListPro;
 			productReference = 38126EAD297B35630020DDFA /* BriskListPro.app */;
 			productType = "com.apple.product-type.application";
+		};
+		38126EC2297C35AC0020DDFA /* ArticleSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38126ECE297C35AC0020DDFA /* Build configuration list for PBXNativeTarget "ArticleSaver" */;
+			buildPhases = (
+				38126EBF297C35AC0020DDFA /* Sources */,
+				38126EC0297C35AC0020DDFA /* Frameworks */,
+				38126EC1297C35AC0020DDFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArticleSaver;
+			productName = ArticleSaver;
+			productReference = 38126EC3297C35AC0020DDFA /* ArticleSaver.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +171,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					38126EAC297B35630020DDFA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					38126EC2297C35AC0020DDFA = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				38126EAC297B35630020DDFA /* BriskListPro */,
+				38126EC2297C35AC0020DDFA /* ArticleSaver */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +204,14 @@
 			files = (
 				38126EB8297B35640020DDFA /* Preview Assets.xcassets in Resources */,
 				38126EB5297B35640020DDFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38126EC1297C35AC0020DDFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38126EC9297C35AC0020DDFA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +227,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38126EBF297C35AC0020DDFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38126EC6297C35AC0020DDFA /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38126ECC297C35AC0020DDFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38126EC2297C35AC0020DDFA /* ArticleSaver */;
+			targetProxy = 38126ECB297C35AC0020DDFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38126EC7297C35AC0020DDFA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38126EC8297C35AC0020DDFA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		38126EB9297B35640020DDFA /* Debug */ = {
@@ -262,11 +374,14 @@
 		38126EBC297B35640020DDFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BriskListPro/BriskListPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BriskListPro/Preview Content\"";
+				DEVELOPMENT_TEAM = VYF33D2LVG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -290,11 +405,14 @@
 		38126EBD297B35640020DDFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BriskListPro/BriskListPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BriskListPro/Preview Content\"";
+				DEVELOPMENT_TEAM = VYF33D2LVG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,6 +427,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.es.BriskListPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		38126ECF297C35AC0020DDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ArticleSaver/ArticleSaver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VYF33D2LVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArticleSaver/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ArticleSaver;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.es.BriskListPro.ArticleSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38126ED0297C35AC0020DDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ArticleSaver/ArticleSaver.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VYF33D2LVG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArticleSaver/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ArticleSaver;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.es.BriskListPro.ArticleSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,6 +502,15 @@
 			buildConfigurations = (
 				38126EBC297B35640020DDFA /* Debug */,
 				38126EBD297B35640020DDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38126ECE297C35AC0020DDFA /* Build configuration list for PBXNativeTarget "ArticleSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38126ECF297C35AC0020DDFA /* Debug */,
+				38126ED0297C35AC0020DDFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
