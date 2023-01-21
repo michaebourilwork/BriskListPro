@@ -14,6 +14,8 @@
 		38126EC6297C35AC0020DDFA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38126EC5297C35AC0020DDFA /* ShareViewController.swift */; };
 		38126EC9297C35AC0020DDFA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38126EC7297C35AC0020DDFA /* MainInterface.storyboard */; };
 		38126ECD297C35AC0020DDFA /* ArticleSaver.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38126EC3297C35AC0020DDFA /* ArticleSaver.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38126ED4297C36880020DDFA /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38126ED3297C36880020DDFA /* CoreData.swift */; };
+		38126ED6297C37110020DDFA /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 38126ED5297C37110020DDFA /* Action.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		38126EC8297C35AC0020DDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		38126ECA297C35AC0020DDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38126ED2297C35C50020DDFA /* ArticleSaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArticleSaver.entitlements; sourceTree = "<group>"; };
+		38126ED3297C36880020DDFA /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		38126ED5297C37110020DDFA /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		38126EA4297B35630020DDFA = {
 			isa = PBXGroup;
 			children = (
+				38126ED3297C36880020DDFA /* CoreData.swift */,
 				38126EAF297B35630020DDFA /* BriskListPro */,
 				38126EC4297C35AC0020DDFA /* ArticleSaver */,
 				38126EAE297B35630020DDFA /* Products */,
@@ -117,6 +122,7 @@
 				38126EC5297C35AC0020DDFA /* ShareViewController.swift */,
 				38126EC7297C35AC0020DDFA /* MainInterface.storyboard */,
 				38126ECA297C35AC0020DDFA /* Info.plist */,
+				38126ED5297C37110020DDFA /* Action.js */,
 			);
 			path = ArticleSaver;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38126ED6297C37110020DDFA /* Action.js in Resources */,
 				38126EC9297C35AC0020DDFA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38126EB3297B35630020DDFA /* ContentView.swift in Sources */,
+				38126ED4297C36880020DDFA /* CoreData.swift in Sources */,
 				38126EB1297B35630020DDFA /* BriskListProApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
